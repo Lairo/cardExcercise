@@ -2,8 +2,8 @@
 {
     internal class Card
     {
-        public Suit Suit { get; set; }
-        public Value Value { get; set; }
+        public Suit Suit { get; private set; }
+        public Value Value { get; private set; }
         public string Name { get { return $"{Value} of {Suit}"; } }
 
 
